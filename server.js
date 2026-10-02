@@ -4,7 +4,7 @@ const path = require("path");
 
 const app = express();
 
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 const notesFile = path.join(__dirname, "data", "notes.json");
 
@@ -236,8 +236,7 @@ app.listen(PORT, () => {
     console.log("======================================");
     console.log("       QUICK NOTE APPLICATION");
     console.log("======================================");
-    console.log(`Server running at: http://localhost:${PORT}`);
-    console.log(`Notes API: http://localhost:${PORT}/notes`);
+    console.log(`Server running on port ${PORT}`);
     console.log("======================================");
     console.log("");
 
