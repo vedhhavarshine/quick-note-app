@@ -1,0 +1,20 @@
+{
+  "name": "quick-note-app",
+  "version": "1.0.0",
+  "description": "A full-stack quick note application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "notes",
+    "node",
+    "express",
+    "full-stack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
